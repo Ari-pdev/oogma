@@ -10,5 +10,9 @@ genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 
+def echo_response(query: str) -> str:
+    return "You asked: "+query
+
+
 def get_ai_response(query: str) -> str:
     return model.generate_content('query').text
