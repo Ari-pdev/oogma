@@ -13,8 +13,7 @@ def start_webview():
 
 
 def main():
-    webview_thread = threading.Thread(target=start_webview)
-    webview_thread.start()
+    start_webview()
 
 
 if __name__ == "__main__":
